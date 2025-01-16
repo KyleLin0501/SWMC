@@ -137,3 +137,8 @@ EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'emailforswmc@gmail.com'  # 您的郵件地址
 EMAIL_HOST_PASSWORD = 'SWMCpassword'    # 您的郵件密碼
 DEFAULT_FROM_EMAIL = 'emailforswmc@gmail.com'
+
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://swmc.onrender.com',  # 將 Render 網站域名
+]
