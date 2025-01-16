@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="section-connect-success">
+    <div class="container py-5 text-center">
+        <h1 class="mb-4">提交成功！</h1>
+        <p>我們已收到您的訊息，將儘快與您聯繫。</p>
+        <a href="{% url 'connect' %}" class="btn btn-primary mt-3">返回聯絡表單</a>
+    </div>
+</section>
+{% endblock %}
