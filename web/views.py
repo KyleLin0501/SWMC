@@ -47,4 +47,4 @@ def connect(request):
     return render(request, 'connect.html')
 
 def connect_success(request):
-    return render(request, 'connect_success.html')
+    return render(request, 'connect_success.html', locals())
