@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 {% block content %}
 <section class="section-connect d-flex align-items-center justify-content-center vh-90">
-    <div class="container py-5">
-        <h1 class="mb-4 text-center">聯絡我們</h1>
+    <div class="container py-5 animate__animated animate__fadeIn">
+        <h1 class="mb-4 text-center animate__animated animate__fadeInDown">聯絡我們</h1>
         <form method="post" action="{% url 'connect' %}" class="row g-3">
             {% csrf_token %}
             <div class="col-md-6">

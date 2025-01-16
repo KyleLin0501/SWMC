@@ -11,7 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet"  href="{% static 'css/web_style.css' %}">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     {% block css_content %}
     {% endblock %}
 </head>
@@ -42,8 +42,8 @@
                                 </button>
                             </div>
                             <ul class="dropdown-menu">
-                                <li><a href="{% url '/' %}" class="dropdown-item">全方位服務</a></li>
-                                <li><a href="{% url '/' %}" class="dropdown-item">國際團隊</a></li>
+                                <li><a href="{% url 'service' %}" class="dropdown-item">全方位服務</a></li>
+                                <li><a href="{% url 'team' %}" class="dropdown-item">國際團隊</a></li>
 
                             </ul>
                         </li>
@@ -137,7 +137,7 @@
                 <div class="col-sm-12 col-lg-5 p-1 d-flex">
                     <img src="{% static 'img/AppleTeacher.png' %}" class="d-block w-100"  style="width: 250px;" alt="Logo">
                 </div>
-                <div class="col-sm-12 col-lg-7 p-1 align-self-center">
+                <div class="col-sm-12 col-lg-7 p-1 ps-2 align-self-center">
                     <p>地　　址｜臺中市西屯區臺灣大道三段76號8樓之1</p>
                     <p>電　　話｜04 - 2451 7250</p>
                     <p>統一編號｜94163553</p>

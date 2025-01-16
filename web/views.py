@@ -11,7 +11,11 @@ from email.mime.text import MIMEText
 def index(request):
     return render(request, "index.html", locals())
 
+def service(request):
+    return render(request, "service.html", locals())
 
+def team(request):
+    return render(request, "team.html", locals())
 
 def connect(request):
     if request.method == 'POST':
