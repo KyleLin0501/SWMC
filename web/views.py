@@ -2,6 +2,8 @@ from django.shortcuts import render, redirect
 from django.core.mail import send_mail
 from django.contrib.auth.models import User
 from .models import Connect
+from email.mime.multipart import MIMEMultipart
+from email.mime.text import MIMEText
 
 
 
@@ -36,7 +38,7 @@ def connect(request):
             send_mail(
                 subject='新的聯絡表單提交',
                 message=f'姓名: {name}\n公司: {company_name}\nEmail: {email}\n電話: {phone}\n訊息: {message}',
-                from_email='emailforswmc@gmail.com',  # 您的郵件地址
+                from_email='kylelin.development@gmail.com',  # 您的郵件地址
                 recipient_list=superuser_emails,
             )
 

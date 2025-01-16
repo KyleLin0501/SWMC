@@ -134,9 +134,9 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'emailforswmc@gmail.com'  # 您的郵件地址
-EMAIL_HOST_PASSWORD = 'SWMCpassword'    # 您的郵件密碼
-DEFAULT_FROM_EMAIL = 'emailforswmc@gmail.com'
+EMAIL_HOST_USER = 'kylelin.development@gmail.com'  # 您的郵件地址
+EMAIL_HOST_PASSWORD = 'wtzi rznm utgq fsyq'    # 您的郵件密碼
+DEFAULT_FROM_EMAIL = 'kylelin.development@gmail.com'
 
 
 CSRF_TRUSTED_ORIGINS = [
