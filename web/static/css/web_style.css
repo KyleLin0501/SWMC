@@ -258,3 +258,26 @@ footer div {
 
 
 /* connect.html */
+/* connect_success.html */
+.section-connect-success .btn-color,
+.section-connect .btn-color {
+    background-color: #5AA8E0;
+    color: #FFF;
+    border: 3px solid transparent; /* 預設邊框透明 */
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    box-sizing: border-box; /* 包括邊框在內的大小 */
+    transition: all 0.3s ease-in-out; /* 平滑過渡效果 */
+}
+
+.section-connect-success .btn-color:hover,
+.section-connect .btn-color:hover {
+    background-color: #FFF;
+    color: #5AA8E0;
+    border-color: #5AA8E0; /* 變更邊框顏色 */
+}
+
+

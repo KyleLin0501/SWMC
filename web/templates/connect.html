@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-<section class="section-connect">
+<section class="section-connect d-flex align-items-center justify-content-center vh-90">
     <div class="container py-5">
         <h1 class="mb-4 text-center">聯絡我們</h1>
         <form method="post" action="{% url 'connect' %}" class="row g-3">
@@ -25,8 +25,8 @@
                 <label for="message" class="form-label">訊息</label>
                 <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
             </div>
-            <div class="col-12 text-center">
-                <button type="submit" class="btn btn-primary px-4">提交</button>
+            <div class="col-12 text-center py-3">
+                <button type="submit" class="btn-color px-4">提交</button>
             </div>
         </form>
     </div>
