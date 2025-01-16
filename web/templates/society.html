@@ -1,0 +1,61 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<section class="section-society d-flex align-items-center justify-content-center">
+    <div class="container py-5 animate__animated animate__fadeIn">
+        <h1 class="mb-4 text-center animate__animated animate__fadeInDown">社會</h1>
+
+        <!-- Button Bar -->
+        <div class="button-bar d-flex flex-wrap">
+            <button class="btn-bar active" data-target="#section1">勞資問題諮詢</button>
+            <button class="btn-bar" data-target="#section2">制定勞動契約及工作規則</button>
+            <button class="btn-bar" data-target="#section3">召開勞資會議</button>
+            <button class="btn-bar" data-target="#section4">勞資爭議調解</button>
+            <button class="btn-bar" data-target="#section5">勞檢健診輔導</button>
+            <button class="btn-bar" data-target="#section6">薪資結構規劃</button>
+        </div>
+    </div>
+</section>
+
+<!-- Sections -->
+<section id="section1" class="section-content py-5">
+    <div class="container">
+        <h2>勞資問題諮詢</h2>
+        <p>這是 勞資問題諮詢 的內容。</p>
+    </div>
+</section>
+<section id="section2" class="section-content py-5">
+    <div class="container">
+        <h2>制定勞動契約及工作規則</h2>
+        <p>這是 制定勞動契約及工作規則 的內容。</p>
+    </div>
+</section>
+<section id="section3" class="section-content py-5">
+    <div class="container">
+        <h2>召開勞資會議</h2>
+        <p>這是 召開勞資會議 的內容。</p>
+    </div>
+</section>
+<section id="section4" class="section-content py-5">
+    <div class="container">
+        <h2>勞資爭議調解</h2>
+        <p>這是 勞資爭議調解 的內容。</p>
+    </div>
+</section>
+<section id="section5" class="section-content py-5">
+    <div class="container">
+        <h2>勞檢健診輔導</h2>
+        <p>這是 勞檢健診輔導 的內容。</p>
+    </div>
+</section>
+<section id="section6" class="section-content py-5">
+    <div class="container">
+        <h2>薪資結構規劃</h2>
+        <p>這是 薪資結構規劃 的內容。</p>
+    </div>
+</section>
+{% endblock %}
+
+{% block js_content %}
+<script src="{% static 'js/society.js' %}"></script>
+{% endblock %}

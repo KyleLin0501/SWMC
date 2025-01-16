@@ -17,6 +17,15 @@ def service(request):
 def team(request):
     return render(request, "team.html", locals())
 
+def environment(request):
+    return render(request, "environment.html", locals())
+
+def society(request):
+    return render(request, "society.html", locals())
+
+def governance(request):
+    return render(request, "governance.html", locals())
+
 def connect(request):
     if request.method == 'POST':
         name = request.POST.get('name')

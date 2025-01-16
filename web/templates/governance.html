@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<section class="section-governance d-flex align-items-center justify-content-center">
+    <div class="container py-5 animate__animated animate__fadeIn">
+        <h1 class="mb-4 text-center animate__animated animate__fadeInDown">公司治理</h1>
+
+        <!-- Button Bar -->
+        <div class="button-bar d-flex flex-wrap">
+            <button class="btn-bar active" data-target="section1">永續報告書輔導</button>
+            <button class="btn-bar" data-target="section2">永續報告書美編設計</button>
+            <button class="btn-bar" data-target="section3">教育訓練</button>
+        </div>
+
+        <!-- Sections -->
+        <div class="sections">
+            <div class="section-content" id="section1">
+                <p>這是 永續報告書輔導 的內容。</p>
+            </div>
+            <div class="section-content d-none" id="section2">
+                <p>這是 永續報告書美編設計 的內容。</p>
+            </div>
+            <div class="section-content d-none" id="section3">
+                <p>這是 教育訓練 的內容。</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block js_content %}
+    <script  src="{% static 'js/environment.js' %}"></script>
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<section class="section-environment d-flex align-items-center justify-content-center">
+    <div class="container py-5 animate__animated animate__fadeIn">
+        <h1 class="mb-4 text-center animate__animated animate__fadeInDown">環境</h1>
+
+        <!-- Button Bar -->
+        <div class="button-bar d-flex flex-wrap">
+            <button class="btn-bar active" data-target="section1">溫室氣體盤查 ISO14064-1</button>
+            <button class="btn-bar" data-target="section2">產品碳足跡 14067</button>
+            <button class="btn-bar" data-target="section3">碳中和 14068-1</button>
+            <button class="btn-bar" data-target="section4">淨零排放(net zero emissions)</button>
+        </div>
+
+        <!-- Sections -->
+        <div class="sections">
+            <div class="section-content" id="section1">
+                <p>這是溫室氣體盤查 ISO14064-1 的內容。</p>
+            </div>
+            <div class="section-content d-none" id="section2">
+                <p>這是產品碳足跡 14067 的內容。</p>
+            </div>
+            <div class="section-content d-none" id="section3">
+                <p>這是碳中和 14068-1 的內容。</p>
+            </div>
+            <div class="section-content d-none" id="section4">
+                <p>這是淨零排放(net zero emissions) 的內容。</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+{% block js_content %}
+    <script  src="{% static 'js/governance.js' %}"></script>
+{% endblock %}

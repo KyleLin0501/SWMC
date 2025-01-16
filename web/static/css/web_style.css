@@ -256,6 +256,112 @@ footer div {
     align-content: center;
 }
 
+/*environment.html*/
+
+.section-environment .button-bar {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.section-environment .btn-bar {
+    flex: 1 1 calc(25% - 10px);
+    padding: 15px 0;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+    background-color: #DFF5E1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.section-environment .btn-bar.active {
+    background-color: #81C784;
+    color: white;
+}
+
+.section-environment .btn-bar:hover {
+    background-color: #A5D6A7;
+    color: black;
+}
+
+.section-environment .section-content {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-environment .d-none {
+    display: none;
+}
+
+@media (max-width: 1140px) {
+    .section-environment .btn-bar {
+        flex: 1 1 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-environment .btn-bar {
+        flex: 1 1 100%;
+    }
+}
+
+/*society.html*/
+
+.section-content {
+    padding: 100px 15px;
+}
+
+.button-bar {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btn-bar {
+    flex: 1 1 calc(33.33% - 10px);
+    padding: 15px 0;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+    background-color: #DFF5E1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-bar.active {
+    background-color: #81C784;
+    color: white;
+}
+
+.btn-bar:hover {
+    background-color: #A5D6A7;
+}
+
+@media (max-width: 1140px) {
+    .section-society .btn-bar {
+        flex: 1 1 30%;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-society .btn-bar {
+        flex: 1 1 100%;
+    }
+}
 
 /* connect.html */
 /* connect_success.html */
@@ -279,5 +385,7 @@ footer div {
     color: #5AA8E0;
     border-color: #5AA8E0; /* 變更邊框顏色 */
 }
+
+
 
 

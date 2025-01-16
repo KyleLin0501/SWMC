@@ -24,6 +24,9 @@ urlpatterns = [
     path('', web.index, name='/'),
     path('service/', web.service, name='service'),
     path('team/', web.team, name='team'),
+    path('environment/', web.environment, name='environment'),
+    path('society/', web.society, name='society'),
+    path('governance/', web.governance, name='governance'),
     path('connect/', web.connect, name='connect'),
     path('connect/success/', web.connect_success, name='connect_success'),
 ]
