@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.core.mail import send_mail
 from django.contrib.auth.models import User
-from .models import Connect
+from .models import *
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
@@ -25,6 +25,12 @@ def society(request):
 
 def governance(request):
     return render(request, "governance.html", locals())
+
+
+
+def case(request):
+    cases = Case.objects.all()
+    return render(request, "case.html", {'cases': cases} )
 
 def connect(request):
     if request.method == 'POST':

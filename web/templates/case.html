@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="section-service d-flex align-items-center justify-content-center">
+    <div class="container py-5 animate__animated animate__fadeIn">
+        <h1 class="mb-4 text-center animate__animated animate__fadeInDown">輔導實績</h1>
+        <div class="row">
+            {% for case in cases %}
+                <div class="col-md-4">
+                    <div class="case-item">
+                        <img src="{{ case.company_img.url }}" alt="{{ case.company_name }}" class="img-fluid">
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+    </div>
+</section>
+
+{% endblock %}

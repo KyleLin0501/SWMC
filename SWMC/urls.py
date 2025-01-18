@@ -17,6 +17,8 @@ Including another URLconf
 from django.contrib import admin
 from web import views as web
 from django.urls import path
+from django.conf import settings
+from django.conf.urls.static import static
 
 
 urlpatterns = [
@@ -27,6 +29,10 @@ urlpatterns = [
     path('environment/', web.environment, name='environment'),
     path('society/', web.society, name='society'),
     path('governance/', web.governance, name='governance'),
+    path('case/', web.case, name='case'),
     path('connect/', web.connect, name='connect'),
     path('connect/success/', web.connect_success, name='connect_success'),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
