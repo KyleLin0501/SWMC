@@ -427,6 +427,56 @@ footer div {
     }
 }
 
+/* case.html */
+
+.section-case .case-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.section-case .image-wrapper {
+    position: relative;
+    width: 100%;
+    padding-top: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-case .image-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.section-case .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(90, 168, 224, 0.7);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.section-case .overlay .company-name {
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.section-case .case-item:hover .overlay {
+    opacity: 1;
+}
+
 /* connect.html */
 /* connect_success.html */
 .section-connect-success .btn-color,
